@@ -1,2 +1,2 @@
 # g-city-auth
-Auth module for G-City project.
+Auth module for G City Project.

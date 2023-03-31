@@ -1,0 +1,26 @@
+### GET index
+GET {{host}}:{{port}}/
+Content-Type: {{contentType}}
+Accept: */*
+WWW-Authenticate: {{authHeader}}{{jwt}}
+
+### POST register
+POST {{host}}:{{port}}/{{version}}/{{authRouter}}/register
+Content-Type: {{contentType}}
+Accept: */*
+WWW-Authenticate: {{authHeader}}{{jwt}}
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120",
+  "confirm": "lipton1120"
+}
+
+
+### POST login
+POST {{host}}:{{port}}/{{version}}/{{authRouter}}/login
+Content-Type: {{contentType}}
+Accept: */*
+WWW-Authenticate: {{authHeader}}{{jwt}}
+
+username=tangzh1983&password=lipton1120

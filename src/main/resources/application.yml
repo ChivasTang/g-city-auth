@@ -1,0 +1,43 @@
+#https://spring.pleiades.io/spring-boot/docs/current/reference/html/application-properties.html
+
+#logging
+logging:
+  level:
+    root: DEBUG
+
+#server
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+#spring
+spring:
+  #datasource
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@//localhost:1521/orclpdb
+    username: SCOTT
+    password: Lipton1120
+  #jason
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+  #thymeleaf
+  thymeleaf:
+    check-template-location: false
+  #session
+  session:
+    timeout: 30m
+    jdbc:
+      table-name: SPRING_SESSION
+
+#mybatis-plus
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    cache-enabled: false
+  type-aliases-package: com.g.city.auth.entity
+
+
