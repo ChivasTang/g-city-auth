@@ -1,6 +1,6 @@
 package com.g.city.auth.rest;
 
-import com.g.city.auth.constant.AppConstants;
+import com.g.city.auth.constant.RouterConstants;
 import com.g.city.auth.dto.UserRegister;
 import com.g.city.auth.rest.req.ApiResult;
 import com.g.city.auth.rest.req.ResultCode;
@@ -9,7 +9,7 @@ import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping({AppConstants.REGISTER_ROUTER_MARKER})
+@RequestMapping({RouterConstants.REGISTER_ROUTER_MARKER})
 public class RegisterController {
     @Resource
     private UserRegisterService userRegisterService;
@@ -19,7 +19,7 @@ public class RegisterController {
     public ApiResult<Object> register(@RequestBody UserRegister userRegister) {
         final ResultCode resultCode = userRegisterService.register(userRegister);
         return resultCode.getCode() == 200
-                ? ApiResult.success(userRegister, AppConstants.LOGIN_ROUTER_MARKER)
+                ? ApiResult.success(userRegister, RouterConstants.LOGIN_ROUTER_MARKER)
                 : ApiResult.fail(resultCode);
     }
 }

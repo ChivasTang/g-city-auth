@@ -5,10 +5,11 @@ import com.g.city.auth.entity.UserMst;
 import com.g.city.auth.mapper.UserMstMapper;
 import com.g.city.auth.service.UserMstService;
 import jakarta.annotation.Resource;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Optional;
 
 @Service
 @Transactional
@@ -17,10 +18,36 @@ public class UserMstServiceImpl implements UserMstService {
     private UserMstMapper userMstMapper;
 
     @Override
-    public Optional<UserMst> findUserByUsername(String username) {
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        final UserMst userMst = findUserByUsername(username);
+        if (userMst == null) {
+            return null;
+        }
+        return User.builder()
+                .username(userMst.getUsername())
+                .password(userMst.getPassword())
+                .roles(userMst.getRoles())
+                .authorities(userMst.getAuthorities())
+                .build();
+    }
+
+
+    @Override
+    public UserMst findUserByUsername(String username) {
+        final UserMst userMst = new UserMst();
         final QueryWrapper<UserMst> queryWrapper = new QueryWrapper<>();
+        queryWrapper.select("user_id", "username", "password");
         queryWrapper.eq("username", username);
-        return Optional.of(userMstMapper.selectOne(queryWrapper));
+        final UserMst found = userMstMapper.selectOne(queryWrapper);
+        if (found == null) {
+            return null;
+        }
+        userMst.setUserId(found.getUserId());
+        userMst.setUsername(found.getUsername());
+        userMst.setPassword(found.getPassword());
+        userMst.setRoles(found.getRoles());
+        userMst.setAuthorities(found.getAuthorities());
+        return userMst;
     }
 
     @Override
@@ -28,7 +55,6 @@ public class UserMstServiceImpl implements UserMstService {
         final QueryWrapper<UserMst> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("username", username);
         final Long count = userMstMapper.selectCount(queryWrapper);
-
         return count != null ? count : 0L;
     }
 
@@ -37,5 +63,4 @@ public class UserMstServiceImpl implements UserMstService {
         final int insert = userMstMapper.insert(userMst);
         return insert != 0;
     }
-
 }

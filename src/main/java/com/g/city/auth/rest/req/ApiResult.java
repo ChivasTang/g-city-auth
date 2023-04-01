@@ -1,6 +1,6 @@
 package com.g.city.auth.rest.req;
 
-import com.g.city.auth.constant.AppConstants;
+import com.g.city.auth.constant.RouterConstants;
 import lombok.Data;
 
 @Data
@@ -13,7 +13,7 @@ public class ApiResult<T> {
 
     public ApiResult() {
         this.timestamp = System.currentTimeMillis();
-        this.path = AppConstants.INDEX_ROUTER_MAKER;
+        this.path = RouterConstants.INDEX_ROUTER_MAKER;
     }
 
     public static <T> ApiResult<T> success(T data, String path) {
