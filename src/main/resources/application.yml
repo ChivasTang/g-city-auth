@@ -40,4 +40,8 @@ mybatis-plus:
     cache-enabled: false
   type-aliases-package: com.g.city.auth.entity
 
-
+#JWT
+jwt:
+  secret: g-city.com
+  private-key: classpath:store/private.pem
+  public-key: classpath:store/public.pem

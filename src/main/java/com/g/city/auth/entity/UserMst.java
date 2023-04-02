@@ -30,6 +30,6 @@ public class UserMst extends BaseEntity {
     public UserMst() {
         setRoles(new String[]{"User"});
         this.authorities = new HashSet<>();
-        this.authorities.add(new SimpleGrantedAuthority("USER"));
+        this.authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
     }
 }

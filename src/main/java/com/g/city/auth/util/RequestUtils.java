@@ -12,7 +12,9 @@ public class RequestUtils {
 
     public static boolean isLoginUrl(HttpServletRequest request) {
         final String url = request.getRequestURI();
-        return (url.contains(RouterConstants.LOGIN_ROUTER_MARKER) || url.contains(RouterConstants.LOGIN_DEFAULT_ROUTER_MARKER))
+        return (url.contains(RouterConstants.LOGIN_ROUTER_MARKER)
+                || url.contains(RouterConstants.TOKEN_ROUTER_MARKER)
+                || url.contains(RouterConstants.LOGIN_DEFAULT_ROUTER_MARKER))
                 && StringUtils.equals(request.getMethod(), HttpMethod.POST.name());
     }
 
@@ -24,7 +26,4 @@ public class RequestUtils {
                 && SecurityContextHolder.getContext().getAuthentication() == null;
     }
 
-    public static boolean isLoginRequest(HttpServletRequest request){
-        return isLoginUrl(request) && !hasBear(request);
-    }
 }

@@ -19,25 +19,35 @@ public class UserMstServiceImpl implements UserMstService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        final UserMst userMst = findUserByUsername(username);
+        final UserMst userMst = findUser("username", username);
+        return getUserDetails(userMst);
+    }
+
+    @Override
+    public UserDetails loadUserByUserId(String userId) {
+        final UserMst userMst = findUser("user_id", userId);
+        return getUserDetails(userMst);
+    }
+
+    @Override
+    public UserDetails getUserDetails(UserMst userMst) {
         if (userMst == null) {
             return null;
         }
         return User.builder()
-                .username(userMst.getUsername())
+                .username(userMst.getUserId())
                 .password(userMst.getPassword())
                 .roles(userMst.getRoles())
                 .authorities(userMst.getAuthorities())
                 .build();
     }
 
-
     @Override
-    public UserMst findUserByUsername(String username) {
+    public UserMst findUser(String eqStr, String conditionStr) {
         final UserMst userMst = new UserMst();
         final QueryWrapper<UserMst> queryWrapper = new QueryWrapper<>();
         queryWrapper.select("user_id", "username", "password");
-        queryWrapper.eq("username", username);
+        queryWrapper.eq(eqStr, conditionStr);
         final UserMst found = userMstMapper.selectOne(queryWrapper);
         if (found == null) {
             return null;
