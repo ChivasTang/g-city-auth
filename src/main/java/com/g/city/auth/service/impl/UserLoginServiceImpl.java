@@ -44,7 +44,7 @@ public class UserLoginServiceImpl implements UserLoginService {
             return ApiResult.fail(ResultCode.LOGIN_FAILED_USERNAME_PASSWORD_NOT_VALIDATED);
         }
         final String token = jwtTokenService.authenticate(request, response, userDetails);
-        if(request.getRequestURI().equals(RouterConstants.TOKEN_ROUTER_MARKER)){
+        if (request.getRequestURI().equals(RouterConstants.TOKEN_ROUTER_MARKER)) {
             userLogin.setToken(token);
         }
         userLogin.setUserId(userDetails.getUsername());

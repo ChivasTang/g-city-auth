@@ -32,13 +32,12 @@ public class JwtTokenFilter extends OncePerRequestFilter {
         this.passwordEncoder = passwordEncoder;
     }
 
-
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         // if Login action
         if (RequestUtils.isLoginUrl(request)) {
             doFilterLogin(request, response);
-        } else if(RequestUtils.hasBear(request)){
+        } else if (RequestUtils.hasBearer(request)) {
             doFilterJWT(request, response);
         }
         filterChain.doFilter(request, response);

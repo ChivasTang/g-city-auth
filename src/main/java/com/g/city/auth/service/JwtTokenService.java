@@ -11,10 +11,14 @@ import java.util.Map;
 public interface JwtTokenService {
 
     String authenticate(HttpServletRequest request, HttpServletResponse response, UserDetails userDetails);
+
     String generate(UserDetails userDetails);
+
     DecodedJWT decode(String jwtToken);
+
     boolean validate(String jwtToken, UserDetails userDetails);
 
     String getUserId(String jwtToken);
+
     Map<String, Claim> getClaims(String jwtToken);
 }

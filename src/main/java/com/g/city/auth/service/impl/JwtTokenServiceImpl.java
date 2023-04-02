@@ -8,6 +8,7 @@ import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.g.city.auth.constant.AppConstants;
 import com.g.city.auth.service.JwtTokenService;
+import com.g.city.auth.util.RequestUtils;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.Data;
@@ -41,7 +42,7 @@ public class JwtTokenServiceImpl implements JwtTokenService, Serializable {
     private static Algorithm algorithm;
     private static JWTVerifier verifier;
 
-    static  {
+    static {
         algorithm = Algorithm.HMAC256(Base64.getEncoder().encodeToString(secret.getBytes()));
         verifier = JWT.require(algorithm).build();
     }
@@ -51,6 +52,9 @@ public class JwtTokenServiceImpl implements JwtTokenService, Serializable {
         final UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
         authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
         SecurityContextHolder.getContext().setAuthentication(authentication);
+        if (RequestUtils.hasBearer(request)) {
+            return null;
+        }
         final String jwtToken = generate(userDetails);
         response.setHeader(HttpHeaders.WWW_AUTHENTICATE, AppConstants.BEARER_PREFIX_MARKER + jwtToken);
         return jwtToken;

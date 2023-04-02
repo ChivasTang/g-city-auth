@@ -5,7 +5,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
-import org.springframework.security.core.context.SecurityContextHolder;
 
 public class RequestUtils {
     private final static String BEARER_HEADER_PREFIX = "Bearer";
@@ -18,12 +17,11 @@ public class RequestUtils {
                 && StringUtils.equals(request.getMethod(), HttpMethod.POST.name());
     }
 
-    public static boolean hasBear(HttpServletRequest request) {
+    public static boolean hasBearer(HttpServletRequest request) {
         final String requestTokenHeader = request.getHeader(HttpHeaders.WWW_AUTHENTICATE);
         return !StringUtils.isEmpty(requestTokenHeader)
                 && requestTokenHeader.startsWith(BEARER_HEADER_PREFIX)
-                && !StringUtils.isEmpty(requestTokenHeader.substring(BEARER_HEADER_PREFIX.length()))
-                && SecurityContextHolder.getContext().getAuthentication() == null;
+                && !StringUtils.isEmpty(requestTokenHeader.substring(BEARER_HEADER_PREFIX.length()));
     }
 
 }
