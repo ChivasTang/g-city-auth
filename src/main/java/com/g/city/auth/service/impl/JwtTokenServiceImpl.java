@@ -52,12 +52,14 @@ public class JwtTokenServiceImpl implements JwtTokenService, Serializable {
         final UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
         authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        if (RequestUtils.hasBearer(request)) {
-            return null;
+        if (RequestUtils.isLoginUrl(request)) {
+            final String jwtToken = generate(userDetails);
+            response.setHeader(HttpHeaders.WWW_AUTHENTICATE, AppConstants.BEARER_PREFIX_MARKER + jwtToken);
+            if (RequestUtils.isTokenUrl(request)) {
+                return jwtToken;
+            }
         }
-        final String jwtToken = generate(userDetails);
-        response.setHeader(HttpHeaders.WWW_AUTHENTICATE, AppConstants.BEARER_PREFIX_MARKER + jwtToken);
-        return jwtToken;
+        return null;
     }
 
     @Override

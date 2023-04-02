@@ -1,0 +1,714 @@
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJuYmYiOjE2ODA0MjkxNTcsIjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCI6IiQyYSQxMCRtMmJnSUU3WEdqd3JVdzRENlpIZEZ1WDcwd1dKRGNRdXZMZnkvVTZWOVN4YzJqY3c4NTd1RyIsImlzcyI6IjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCIsImV4cCI6MTY4MTAzMzk1NywiaWF0IjoxNjgwNDI5MTU3LCJqdGkiOiJmZDhlMTVmYy01OTA0LTRjOTctOGVlNS02YzZjNzY4NGNjNTIifQ.wlVaHlUQIqaKia8cmXU12giPwsT1UnYq_GOZDJlR90o
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-02T185345.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+<> 2023-04-02T185256.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+<> 2023-04-02T185115.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+<> 2023-04-02T184920.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+<> 2023-04-02T184753.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1984",
+  "password": "lipton1120"
+}
+
+<> 2023-04-02T184741.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1984",
+  "password": "lipton1120"
+}
+
+<> 2023-04-02T171731.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJuYmYiOjE2ODA0MjE5NzQsIjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCI6IiQyYSQxMCRtMmJnSUU3WEdqd3JVdzRENlpIZEZ1WDcwd1dKRGNRdXZMZnkvVTZWOVN4YzJqY3c4NTd1RyIsImlzcyI6IjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCIsImV4cCI6MTY4MTAyNjc3NCwiaWF0IjoxNjgwNDIxOTc0LCJqdGkiOiIxMzM0ZDU3MC1hMmZmLTQyZTMtYjJlOS1iMDk5MGMxYmZjODgifQ.HelttIVF8HBr5Wr3-TGrHLEHZ3QSeNav3j3kCpoOitw
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-02T171703.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJuYmYiOjE2ODA0MjE5NzQsIjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCI6IiQyYSQxMCRtMmJnSUU3WEdqd3JVdzRENlpIZEZ1WDcwd1dKRGNRdXZMZnkvVTZWOVN4YzJqY3c4NTd1RyIsImlzcyI6IjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCIsImV4cCI6MTY4MTAyNjc3NCwiaWF0IjoxNjgwNDIxOTc0LCJqdGkiOiIxMzM0ZDU3MC1hMmZmLTQyZTMtYjJlOS1iMDk5MGMxYmZjODgifQ.HelttIVF8HBr5Wr3-TGrHLEHZ3QSeNav3j3kCpoOitw
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-02T170703.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJuYmYiOjE2ODA0MjE5NzQsIjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCI6IiQyYSQxMCRtMmJnSUU3WEdqd3JVdzRENlpIZEZ1WDcwd1dKRGNRdXZMZnkvVTZWOVN4YzJqY3c4NTd1RyIsImlzcyI6IjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCIsImV4cCI6MTY4MTAyNjc3NCwiaWF0IjoxNjgwNDIxOTc0LCJqdGkiOiIxMzM0ZDU3MC1hMmZmLTQyZTMtYjJlOS1iMDk5MGMxYmZjODgifQ.HelttIVF8HBr5Wr3-TGrHLEHZ3QSeNav3j3kCpoOitw
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-02T170127.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJuYmYiOjE2ODA0MjE5NzQsIjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCI6IiQyYSQxMCRtMmJnSUU3WEdqd3JVdzRENlpIZEZ1WDcwd1dKRGNRdXZMZnkvVTZWOVN4YzJqY3c4NTd1RyIsImlzcyI6IjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCIsImV4cCI6MTY4MTAyNjc3NCwiaWF0IjoxNjgwNDIxOTc0LCJqdGkiOiIxMzM0ZDU3MC1hMmZmLTQyZTMtYjJlOS1iMDk5MGMxYmZjODgifQ.HelttIVF8HBr5Wr3-TGrHLEHZ3QSeNav3j3kCpoOitw
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-04-02T165631.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJuYmYiOjE2ODA0MjE5NzQsIjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCI6IiQyYSQxMCRtMmJnSUU3WEdqd3JVdzRENlpIZEZ1WDcwd1dKRGNRdXZMZnkvVTZWOVN4YzJqY3c4NTd1RyIsImlzcyI6IjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCIsImV4cCI6MTY4MTAyNjc3NCwiaWF0IjoxNjgwNDIxOTc0LCJqdGkiOiIxMzM0ZDU3MC1hMmZmLTQyZTMtYjJlOS1iMDk5MGMxYmZjODgifQ.HelttIVF8HBr5Wr3-TGrHLEHZ3QSeNav3j3kCpoOitw
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJuYmYiOjE2ODA0MjE5NzQsIjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCI6IiQyYSQxMCRtMmJnSUU3WEdqd3JVdzRENlpIZEZ1WDcwd1dKRGNRdXZMZnkvVTZWOVN4YzJqY3c4NTd1RyIsImlzcyI6IjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCIsImV4cCI6MTY4MTAyNjc3NCwiaWF0IjoxNjgwNDIxOTc0LCJqdGkiOiIxMzM0ZDU3MC1hMmZmLTQyZTMtYjJlOS1iMDk5MGMxYmZjODgifQ.HelttIVF8HBr5Wr3-TGrHLEHZ3QSeNav3j3kCpoOitw
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+<> 2023-04-02T165257.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJuYmYiOjE2ODA0MjE4NzksIjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCI6IiQyYSQxMCRtMmJnSUU3WEdqd3JVdzRENlpIZEZ1WDcwd1dKRGNRdXZMZnkvVTZWOVN4YzJqY3c4NTd1RyIsImlzcyI6IjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCIsImV4cCI6MTY4MTAyNjY3OSwiaWF0IjoxNjgwNDIxODc5LCJqdGkiOiIyMDRhYjhkMi0xNjZlLTRmMTEtYTc0Mi0yNGQ3NjlkNDgwZDIifQ.1NUv8OisH6SCt2SsrMp41i0Wjd_SkTbFEmS_wwM05Wk
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJuYmYiOjE2ODA0MjE4NzksIjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCI6IiQyYSQxMCRtMmJnSUU3WEdqd3JVdzRENlpIZEZ1WDcwd1dKRGNRdXZMZnkvVTZWOVN4YzJqY3c4NTd1RyIsImlzcyI6IjNkZTU5NzEyLTM0ZmItNDNjMy1hYjEwLWRhYWJiODI5Yzk5MCIsImV4cCI6MTY4MTAyNjY3OSwiaWF0IjoxNjgwNDIxODc5LCJqdGkiOiIyMDRhYjhkMi0xNjZlLTRmMTEtYTc0Mi0yNGQ3NjlkNDgwZDIifQ.1NUv8OisH6SCt2SsrMp41i0Wjd_SkTbFEmS_wwM05Wk
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+<> 2023-04-02T165139.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/x-www-form-urlencoded
+Accept: */*
+Content-Length: 39
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+username=tangzh1983&password=lipton1120
+
+###
+
+POST http://localhost:8080/v1/api/auth/register
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 85
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120",
+  "confirm": "lipton1120"
+}
+
+<> 2023-04-02T152802.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODEwMTU0MDUsImlhdCI6MTY4MDQxMDYwNX0.8AqrG3bw7biAVTUPsrJXLWeWpt7RLSMo-_5udEo5GEB5YSwiKzeRTsJTgMP_SKc0qkzfdkAliqjZoMrUDGAZ9g
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/login
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer iOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODEwMTU0MDUsImlhdCI6MTY4MDQxMDYwNX0.8AqrG3bw7biAVTUPsrJXLWeWpt7RLSMo-_5udEo5GEB5YSwiKzeRTsJTgMP_SKc0qkzfdkAliqjZoMrUDGAZ9g
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer iOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODEwMTU0MDUsImlhdCI6MTY4MDQxMDYwNX0.8AqrG3bw7biAVTUPsrJXLWeWpt7RLSMo-_5udEo5GEB5YSwiKzeRTsJTgMP_SKc0qkzfdkAliqjZoMrUDGAZ9g
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer iOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODEwMTU0MDUsImlhdCI6MTY4MDQxMDYwNX0.8AqrG3bw7biAVTUPsrJXLWeWpt7RLSMo-_5udEo5GEB5YSwiKzeRTsJTgMP_SKc0qkzfdkAliqjZoMrUDGAZ9g
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODEwMTU0MDUsImlhdCI6MTY4MDQxMDYwNX0.8AqrG3bw7biAVTUPsrJXLWeWpt7RLSMo-_5udEo5GEB5YSwiKzeRTsJTgMP_SKc0qkzfdkAliqjZoMrUDGAZ9g
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODEwMTU0MDUsImlhdCI6MTY4MDQxMDYwNX0.8AqrG3bw7biAVTUPsrJXLWeWpt7RLSMo-_5udEo5GEB5YSwiKzeRTsJTgMP_SKc0qkzfdkAliqjZoMrUDGAZ9g
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODEwMTU0MDUsImlhdCI6MTY4MDQxMDYwNX0.8AqrG3bw7biAVTUPsrJXLWeWpt7RLSMo-_5udEo5GEB5YSwiKzeRTsJTgMP_SKc0qkzfdkAliqjZoMrUDGAZ9g
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer iOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODEwMTUxNjUsImlhdCI6MTY4MDQxMDM2NX0.eCVv1ysKs9sZrXkam4LQXwB-UM1ZRGr1nUtAU3baBtCjKKKvjSHNyjj_cfhr1Wn3GWR6yxSH2VYVXNeYK9FrTQ
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+<> 2023-04-02T134325.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODEwMTUxNjUsImlhdCI6MTY4MDQxMDM2NX0.eCVv1ysKs9sZrXkam4LQXwB-UM1ZRGr1nUtAU3baBtCjKKKvjSHNyjj_cfhr1Wn3GWR6yxSH2VYVXNeYK9FrTQ
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODEwMTUxNjUsImlhdCI6MTY4MDQxMDM2NX0.eCVv1ysKs9sZrXkam4LQXwB-UM1ZRGr1nUtAU3baBtCjKKKvjSHNyjj_cfhr1Wn3GWR6yxSH2VYVXNeYK9FrTQ
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODEwMTUxNjUsImlhdCI6MTY4MDQxMDM2NX0.eCVv1ysKs9sZrXkam4LQXwB-UM1ZRGr1nUtAU3baBtCjKKKvjSHNyjj_cfhr1Wn3GWR6yxSH2VYVXNeYK9FrTQ
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+<> 2023-04-02T133925.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer iOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODA5NjgzNzQsImlhdCI6MTY4MDM2MzU3NH0.KrhI5TT3MVEEtxeZvvyKq48tC1LCt7blpZc5SNTLpfsMjhsAG68J3tSQFT4W2Qt-kaNdeT-GHCCetLewoqxjsw
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+<> 2023-04-02T003934.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODA5NjgwNjQsImlhdCI6MTY4MDM2MzI2NH0.ZX4miiDv0P8qdfWMzMW5kAckBTERqvKqadlrITpm0IbBB_gO1M6cpZmzb3lFNBSGIN425BKjylGh98ayEOm33w
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODA5NjgwNjQsImlhdCI6MTY4MDM2MzI2NH0.ZX4miiDv0P8qdfWMzMW5kAckBTERqvKqadlrITpm0IbBB_gO1M6cpZmzb3lFNBSGIN425BKjylGh98ayEOm33w
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODA5NjgwNjQsImlhdCI6MTY4MDM2MzI2NH0.ZX4miiDv0P8qdfWMzMW5kAckBTERqvKqadlrITpm0IbBB_gO1M6cpZmzb3lFNBSGIN425BKjylGh98ayEOm33w
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/profile
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODA5NjgwNjQsImlhdCI6MTY4MDM2MzI2NH0.ZX4miiDv0P8qdfWMzMW5kAckBTERqvKqadlrITpm0IbBB_gO1M6cpZmzb3lFNBSGIN425BKjylGh98ayEOm33w
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+<> 2023-04-02T003424.200.json
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+<> 2023-04-02T003313.200.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/x-www-form-urlencoded
+Accept: */*
+Content-Length: 39
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+username=tangzh1983&password=lipton1120
+
+<> 2023-04-02T003208.200.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/x-www-form-urlencoded
+Accept: */*
+Content-Length: 39
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+username=tangzh1983&password=lipton1120
+
+###
+
+POST http://localhost:8080/v1/api/auth/token
+Content-Type: application/json
+Accept: */*
+WWW-Authenticate: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzZGU1OTcxMi0zNGZiLTQzYzMtYWIxMC1kYWFiYjgyOWM5OTAiLCJpc3MiOiJhcHAiLCJleHAiOjE2ODA5NjUxNzIsImlhdCI6MTY4MDM2MDM3Mn0.zDe9AR-_cFWJ5_VOCUXo8jblPvcpu9sZH9c84HAsg3mO3ILO8Unr8GSwrrdKmccr0VQmlsxze9xYu9CrnoGtCQ
+Content-Length: 58
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "tangzh1983",
+  "password": "lipton1120"
+}
+
+###
+

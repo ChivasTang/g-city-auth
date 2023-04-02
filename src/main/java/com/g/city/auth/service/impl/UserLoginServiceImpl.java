@@ -1,6 +1,5 @@
 package com.g.city.auth.service.impl;
 
-import com.g.city.auth.constant.RouterConstants;
 import com.g.city.auth.dto.UserLogin;
 import com.g.city.auth.rest.req.ApiResult;
 import com.g.city.auth.rest.req.ResultCode;
@@ -43,11 +42,10 @@ public class UserLoginServiceImpl implements UserLoginService {
         if (!passwordEncoder.matches(rawPassword, userDetails.getPassword())) {
             return ApiResult.fail(ResultCode.LOGIN_FAILED_USERNAME_PASSWORD_NOT_VALIDATED);
         }
-        final String token = jwtTokenService.authenticate(request, response, userDetails);
-        if (request.getRequestURI().equals(RouterConstants.TOKEN_ROUTER_MARKER)) {
-            userLogin.setToken(token);
-        }
+        final String jwtToken = jwtTokenService.authenticate(request, response, userDetails);
+        userLogin.setToken(jwtToken);
         userLogin.setUserId(userDetails.getUsername());
+        userLogin.setUsername(username);
         userLogin.setPassword(null);
         return ApiResult.success(userLogin);
     }
