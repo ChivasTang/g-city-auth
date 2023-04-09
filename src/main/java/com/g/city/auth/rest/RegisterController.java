@@ -6,6 +6,7 @@ import com.g.city.auth.rest.req.ApiResult;
 import com.g.city.auth.rest.req.ResultCode;
 import com.g.city.auth.service.UserRegisterService;
 import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -16,8 +17,8 @@ public class RegisterController {
 
     @PostMapping
     @ResponseBody
-    public ApiResult<Object> register(@RequestBody UserRegister userRegister) {
-        final ResultCode resultCode = userRegisterService.register(userRegister);
+    public ApiResult<Object> register(HttpServletRequest request, @RequestBody UserRegister userRegister) {
+        final ResultCode resultCode = userRegisterService.register(request, userRegister);
         return resultCode.getCode() == 200
                 ? ApiResult.success(userRegister, RouterConstants.LOGIN_ROUTER_MARKER)
                 : ApiResult.fail(resultCode);

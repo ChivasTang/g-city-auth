@@ -3,9 +3,11 @@ package com.g.city.auth.service.impl;
 import com.g.city.auth.dto.UserLogin;
 import com.g.city.auth.rest.req.ApiResult;
 import com.g.city.auth.rest.req.ResultCode;
+import com.g.city.auth.service.AccHistService;
 import com.g.city.auth.service.JwtTokenService;
 import com.g.city.auth.service.UserLoginService;
 import com.g.city.auth.service.UserMstService;
+import com.g.city.auth.util.RequestUtils;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -23,6 +25,9 @@ public class UserLoginServiceImpl implements UserLoginService {
 
     @Resource
     private JwtTokenService jwtTokenService;
+
+    @Resource
+    private AccHistService accHistService;
 
     @Override
     public ApiResult<Object> login(HttpServletRequest request, HttpServletResponse response, UserLogin userLogin) {
@@ -43,10 +48,14 @@ public class UserLoginServiceImpl implements UserLoginService {
             return ApiResult.fail(ResultCode.LOGIN_FAILED_USERNAME_PASSWORD_NOT_VALIDATED);
         }
         final String jwtToken = jwtTokenService.authenticate(request, response, userDetails);
-        userLogin.setToken(jwtToken);
-        userLogin.setUserId(userDetails.getUsername());
+        final String userId = userDetails.getUsername();
+        userLogin.setUserId(userId);
+        if (RequestUtils.isTokenUrl(request)) {
+            userLogin.setToken(jwtToken);
+        }
         userLogin.setUsername(username);
         userLogin.setPassword(null);
+        accHistService.save(request, userId);
         return ApiResult.success(userLogin);
     }
 }

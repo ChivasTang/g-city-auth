@@ -3,9 +3,11 @@ package com.g.city.auth.service.impl;
 import com.g.city.auth.dto.UserRegister;
 import com.g.city.auth.entity.UserMst;
 import com.g.city.auth.rest.req.ResultCode;
+import com.g.city.auth.service.AccHistService;
 import com.g.city.auth.service.UserMstService;
 import com.g.city.auth.service.UserRegisterService;
 import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletRequest;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -22,8 +24,11 @@ public class UserRegisterServiceImpl implements UserRegisterService {
     @Resource
     private UserMstService userMstService;
 
+    @Resource
+    private AccHistService accHistService;
+
     @Override
-    public ResultCode register(UserRegister userRegister) {
+    public ResultCode register(HttpServletRequest request, UserRegister userRegister) {
         //Check username password
         if (userRegister == null || StringUtils.isEmpty(userRegister.getUsername())) {
             return ResultCode.REGISTER_FAILED_USERNAME_NOT_INPUT;
@@ -45,16 +50,17 @@ public class UserRegisterServiceImpl implements UserRegisterService {
         final UserMst userMst = new UserMst();
         userMst.setUsername(username);
         userMst.setPassword(encodedPassword);
-        final String uuid = UUID.randomUUID().toString();
-        userMst.setUserId(uuid);
-        userMst.setCUserId(uuid);
-        userMst.setUUserId(uuid);
+        final String userId = UUID.randomUUID().toString();
+        userMst.setUserId(userId);
+        userMst.setCUserId(userId);
+        userMst.setUUserId(userId);
         userMst.setAuthorities(null);
         userMst.setRoles(null);
         final boolean success = userMstService.saveOne(userMst);
         if (!success) {
             return ResultCode.REGISTER_FAILED_NOT_SAVED;
         }
+        accHistService.save(request, userId);
         return ResultCode.SUCCESS_RESULT;
     }
 }

@@ -10,7 +10,7 @@ Accept: */*
 WWW-Authenticate: {{authHeader}} {{jwt}}
 
 {
-  "username": "tangzh1983",
+  "username": "tangzh1984",
   "password": "lipton1120",
   "confirm": "lipton1120"
 }

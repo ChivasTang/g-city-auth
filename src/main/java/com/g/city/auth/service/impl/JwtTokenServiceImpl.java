@@ -7,6 +7,7 @@ import com.auth0.jwt.exceptions.*;
 import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.g.city.auth.constant.AppConstants;
+import com.g.city.auth.service.AccHistService;
 import com.g.city.auth.service.JwtTokenService;
 import com.g.city.auth.service.UserMstService;
 import com.g.city.auth.util.RequestUtils;
@@ -47,6 +48,9 @@ public class JwtTokenServiceImpl implements JwtTokenService, Serializable {
     @Resource
     private UserMstService userMstService;
 
+    @Resource
+    private AccHistService accHistService;
+
     static {
         algorithm = Algorithm.HMAC256(Base64.getEncoder().encodeToString(secret.getBytes()));
         verifier = JWT.require(algorithm).build();
@@ -61,6 +65,7 @@ public class JwtTokenServiceImpl implements JwtTokenService, Serializable {
             final UserDetails userDetails = userMstService.loadUserByUserId(userId);
             if (userDetails != null && validate(authToken, userDetails)) {
                 authenticate(request, response, userDetails);
+                accHistService.save(request, userId);
             }
         }
     }
