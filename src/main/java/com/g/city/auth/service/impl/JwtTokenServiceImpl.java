@@ -8,7 +8,9 @@ import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.g.city.auth.constant.AppConstants;
 import com.g.city.auth.service.JwtTokenService;
+import com.g.city.auth.service.UserMstService;
 import com.g.city.auth.util.RequestUtils;
+import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.Data;
@@ -42,9 +44,25 @@ public class JwtTokenServiceImpl implements JwtTokenService, Serializable {
     private static Algorithm algorithm;
     private static JWTVerifier verifier;
 
+    @Resource
+    private UserMstService userMstService;
+
     static {
         algorithm = Algorithm.HMAC256(Base64.getEncoder().encodeToString(secret.getBytes()));
         verifier = JWT.require(algorithm).build();
+    }
+
+    @Override
+    public void doFilterJWT(HttpServletRequest request, HttpServletResponse response) {
+        final String requestTokenHeader = request.getHeader(HttpHeaders.WWW_AUTHENTICATE);
+        final String authToken = requestTokenHeader.substring(6).trim();
+        final String userId = getUserId(authToken);
+        if (!StringUtils.isEmpty(userId) && SecurityContextHolder.getContext().getAuthentication() == null) {
+            final UserDetails userDetails = userMstService.loadUserByUserId(userId);
+            if (userDetails != null && validate(authToken, userDetails)) {
+                authenticate(request, response, userDetails);
+            }
+        }
     }
 
     @Override

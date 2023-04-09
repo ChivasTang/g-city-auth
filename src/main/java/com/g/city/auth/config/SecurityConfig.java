@@ -2,7 +2,6 @@ package com.g.city.auth.config;
 
 import com.g.city.auth.constant.RouterConstants;
 import com.g.city.auth.filter.JwtTokenFilter;
-import com.g.city.auth.service.JwtTokenService;
 import com.g.city.auth.service.UserMstService;
 import jakarta.annotation.Resource;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
@@ -31,7 +30,7 @@ public class SecurityConfig {
     private UserMstService userMstService;
 
     @Resource
-    private JwtTokenService jwtTokenService;
+    private JwtTokenFilter jwtTokenFilter;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -58,7 +57,7 @@ public class SecurityConfig {
                 .authenticated());
 
         http.authenticationProvider(authenticationProvider());
-        http.addFilterBefore(new JwtTokenFilter(userMstService, jwtTokenService, passwordEncoder()), UsernamePasswordAuthenticationFilter.class);
+        http.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
         http.exceptionHandling(ex -> ex.authenticationEntryPoint(new BearerTokenAuthenticationEntryPoint()).accessDeniedHandler(new BearerTokenAccessDeniedHandler()));
         return http.build();
     }

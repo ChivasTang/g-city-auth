@@ -15,10 +15,11 @@ server:
 spring:
   #datasource
   datasource:
-    driver-class-name: oracle.jdbc.OracleDriver
-    url: jdbc:oracle:thin:@//192.168.1.13:1521/orclpdb
-    username: SCOTT
-    password: Lipton1120
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.13:3306/tsk?useSSL=false&characterEncoding=utf-8
+    username: root
+    password: root
+
   #jason
   jackson:
     serialization:

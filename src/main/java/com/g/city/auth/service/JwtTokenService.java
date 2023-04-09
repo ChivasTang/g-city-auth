@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Map;
 
 public interface JwtTokenService {
+    void doFilterJWT(HttpServletRequest request, HttpServletResponse response);
 
     String authenticate(HttpServletRequest request, HttpServletResponse response, UserDetails userDetails);
 

@@ -49,6 +49,8 @@ public class UserRegisterServiceImpl implements UserRegisterService {
         userMst.setUserId(uuid);
         userMst.setCUserId(uuid);
         userMst.setUUserId(uuid);
+        userMst.setAuthorities(null);
+        userMst.setRoles(null);
         final boolean success = userMstService.saveOne(userMst);
         if (!success) {
             return ResultCode.REGISTER_FAILED_NOT_SAVED;
